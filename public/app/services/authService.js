@@ -61,7 +61,7 @@ angular.module('authService', [])
   var interceptorFactory = {};
 
   interceptorFactory.request = function(config){
-    var = AuthToken.getToken();
+    var token = AuthToken.getToken();
 
     if (token) {
       config.headers['x-access-token'] = token;
