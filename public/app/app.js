@@ -2,4 +2,4 @@ angular.module('MyApp',['appRoutes','mainCtrl', 'authService', 'UserCtrl', 'user
 
 .config(function($httpProvider){
   $httpProvider.interceptors.push('AuthInterceptor');
-})
+});
